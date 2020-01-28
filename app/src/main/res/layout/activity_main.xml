@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/firebase_logo" />
+
+    <!--Button Register-->
+
+    <!--Button Login-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@drawable/firebase_logo"
+        android:layout_centerVertical="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="LETSCHAT"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/register_btn"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_btn"
+        android:layout_marginBottom="7dp"
+        android:drawableStart="@drawable/ic_action_name"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="89dp"
+        android:drawableStart="@drawable/ic_login_button"
+        android:drawableLeft="@drawable/ic_login_button"
+        android:text="Login" />
+
+
+</RelativeLayout>
